@@ -1,11 +1,88 @@
 {
   "ecmaFeatures": {
   },
+
   "env": {
+    "browser": true,// ブラウザのグローバル変数を利用可能にする
+    "node": true// Node.jsのグローバル変数とNode.js特有のルールを追加する
   },
+
   "globals": {
   },
+
   "rules": {
-    "comma-dangle": [2]// 不要なカンマを許可しない
+    // Possible Errors
+    "comma-dangle": [2],// 不要なカンマを許可しない
+    "no-cond-assign": [2],// 条件式での代入を許可しない
+    "no-console": [2],// consoleの利用を許可しない。node環境ならデフォルトで無効
+    "no-constant-condition": [2],// 条件式での定数式を許可しない
+    "no-control-regex": [2],// 正規表現での制御文字の使用を許可しない
+    "no-debugger": [2],// debuggerを許可しない,
+    "no-dupe-args": [2],// 引数の重複を許可しない
+    "no-dupe-keys": [2],// オブジェクトキーの重複を許可しない
+    "no-duplicate-case": [2],// caseのラベルの重複を許可しない
+    "no-empty-character-class": [2],// 空文字の正規表現を許可しない
+    "no-empty": [2],// 空のブロック文を許可しない
+    "no-ex-assign": [2],// 例外オブジェクトの上書きを許可しない
+    "no-extra-boolean-cast": [2],// 式ですでに真偽値に強制変換されるようなコンテキストでの2重否定を許可しない
+    "no-extra-parens": [2],// 不要な括弧を許可しない
+    "no-extra-semi": [2],// 不要なセミコロンを許可しない
+    "no-func-assign": [2],// 関数への代入、上書きを許可しない
+    "no-inner-declarations": [2],// ファーストレベル以外での関数宣言を許可しない
+    "no-invalid-regexp": [2],// 無効な正規表現を許可しない
+    "no-irregular-whitespace": [2],// 無効なスペースを許可しない
+    "no-negated-in-lhs": [2],// in演算子での左オペランドの否定を許可しない
+    "no-obj-calls": [2],// グローバルオブジェクトを関数として呼び出すことを許可しない
+    "no-regex-spaces": [2],// 正規表現リテラルで複数のスペースを許可しない
+    "no-reserved-keys": [2],// オブジェクトのキーに予約語を使用することを許可しない
+    "no-sparse-arrays": [2],// スカスカの配列を許可しない
+    "no-unreachable": [2],// 決して到達することのないコードを許可しない
+    "use-isnan": [2],// NaNでの比較を許可しない
+    "valid-jsdoc": [2],// 無効な、不完全なJSDocコメントを許可しない
+    "valid-typeof": [2],// 有効な文字列以外とtypeofの比較を許可しない
+
+    // Best Practices
+    "accessor-pairs": [2],// setterを持ってgetterを持たないオブジェクトの作成を許可しない
+    "block-scoped-var": [2],// 宣言しているコンテキストの外で使用されている変数を許可しない
+    "complexity": [2, 2],// 循環的複雑度と、その閾値
+    "consistent-return": [2],// 何も値を返さない(undefined)ステートメントと値を返すステートメントの混在を許可しない
+    "curly": [2],// 中括弧の省略を許可しない
+    "default-case": [2],//Swith文でのdefaultの省略を許可しない
+    "dot-notation": [2],//プロパティへのアクセスにブラケット記法を許可しない
+    "dot-location": [2],// 一貫性のない改行前、改行後のドットを許可しない
+    "eqeqeq": [2],// 等価演算子を許可しない
+    "guard-for-in": [2],// プロトタイプチェーンで継承したプロパティをフィルタリングしないfor-inを許可しない
+    "no-alert": [2],// alertの使用を許可しない
+    "no-caller": [2],// arguments.callee、arguments.callerの使用を許可しない
+    "no-div-regex": [2],// 除算のように見える正規表現を許可しない
+    "no-else-return": [2],// 不要なelse節でのreturnを許可しない
+    "no-empty-label": [2],//繰り返し処理やswitch文以外に対してのラベルの使用を許可しない
+    "no-eq-null": [2],// 等価演算子でのnull比較を許可しない
+    "no-eval": [2],// evalの使用を許可しない
+    "no-extend-native": [2],// ネイティブオブジェクトの拡張を許可しない
+    "no-extra-bind": [2],// 不要なbindの使用を許可しない
+    "no-fallthrough": [2],// フォールスルーの不足を許可しない
+    "no-floating-decimal": [2],// 浮動小数点のドットの前後の省略を許可しない
+    "no-implied-eval": [2],// 暗黙のevalを許可しない
+    "no-iterator": [2],// __iterator__の使用を許可しない
+    "no-labels": [2],// ラベルをつけたステートメントを許可しない
+    "no-lone-blocks": [2],// 不要なブロックを許可しない
+    "no-loop-func": [2],// ループの中で関数をつくることを許可しない
+    "no-multi-spaces": [2],// 複数のスペースを許可しない
+    "no-multi-str": [2],// バックスラッシュつなぎの複数行の文字列を許可しない
+    "no-native-reassign": [2],// ネイティブオブジェクトへの再代入を許可しない
+    "no-new-func": [2],// Functionコンストラクタの使用を許可しない
+    "no-new-wrappers": [2],// プリミティブ型のラッパーオブジェクトの使用を許可しない
+    "no-new": [2],// 変数に代入せずnew演算子を使用することを許可しない
+    "no-octal-escape": [2],// 8進数のエスケープシーケンスの使用を許可しない
+    "no-octal": [2],// 8進数リテラルの使用を許可しない
+    "no-param-reassign": [2],// 関数の引数に対する再代入を許可しない
+    "no-process-env": [2],// Node.jsのprocess.envの使用を許可しない
+    "no-proto": [2],// __proto__の使用を許可しない
+    "no-redeclare": [2],// 同じ変数を繰り返し宣言することを許可しない
+    "no-return-assign": [2],// returnステートメントでの代入を許可しない
+    "no-script-url": [2],// javascript:URLの使用を許可しない
+    "no-self-compare": [2],// 自分自身との比較を許可しない
+    "no-sequences": [2]
   }
 }
