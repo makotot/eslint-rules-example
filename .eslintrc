@@ -83,6 +83,30 @@
     "no-return-assign": [2],// returnステートメントでの代入を許可しない
     "no-script-url": [2],// javascript:URLの使用を許可しない
     "no-self-compare": [2],// 自分自身との比較を許可しない
-    "no-sequences": [2]
+    "no-sequences": [2],// カンマ演算子の使用を許可しない(for文初期化や括弧で囲われたシーケンスなどは例外)
+    "no-throw-literal": [2],// リテラルを投げることを許可しない
+    "no-unused-expressions": [2],// 使用することのない式を許可しない
+    "no-void": [2],// voidの使用を許可しない
+    "no-warning-comments": [2],// TODOやFIXMEのような開発中ととれるコメントを許可しない
+    "no-with": [2],// withの使用を許可しない
+    "radix": [2],// parseIntの引数の基数を省略することを許可しない
+    "vars-on-top": [2],// 関数スコープの最上部で変数宣言をまとめないことを許可しない
+    "wrap-iife": [2],// 即時関数を括弧で囲わないことを許可しない
+    "yoda": [2],// 条件の値が左辺にくる条件式(ヨーダ)を許可しない
+
+    // Strict Mode
+    "strict": [2, "global"],// Strictモードのモード指定
+
+    // Variables
+    "no-catch-shadow": [2],// catch句の引数を上位スコープで変数宣言することを許可しない
+    "no-delete-var": [2],// 変数に対するdeleteの使用を許可しない
+    "no-label-var": [2],// 変数名をラベルに使用することを許可しない
+    "no-shadow-restricted-names": [2],// グローバルオブジェクトのプロパティに対するシャドーイングを許可しない
+    "no-shadow": [2],// シャドーイングを許可しない
+    "no-undef-init": [2],// undefinedによる初期化を許可しない
+    "no-unused-vars": [2],// 使用することのない変数を許可しない
+    "no-use-before-define": [2]// 定義する前に使用することを許可しない
+
+    // Node.js
   }
 }

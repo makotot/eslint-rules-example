@@ -280,6 +280,83 @@ if (selfCompare === selfCompare) {
   selfCompare = 0;
 }
 
-var noSequence = function () {};
 
-var commaOperator = (noSequence, obj.a);
+var noSequenceA = (3, 5);
+noSequenceA = noSequenceB += 5, noSequence + noSequenceB;
+
+function throwLiteral () {
+  throw "no-throw-literal";
+}
+
+"unused expressions";
+
+void 0;
+
+// TODO: no-warning-comments
+
+with (obj) {
+  console.log(this);
+}
+
+var radix = parseInt("001");
+
+function varsOnTop (n) {
+  var vars1 = 0;
+  if (n) {
+    return n;
+  }
+
+  var vars2 = 10;
+
+  return vars1 + vars2 + n;
+}
+
+var wrapIife = function () {
+  return {};
+}();
+
+
+var yoda = 1;
+
+if (1 === yoda) {
+  console.log(yoda);
+}
+
+"use strict";
+
+function useStrict () {
+  "use strict";
+}
+
+var shadowErr = 'err';
+try {
+  throw new Error();
+} catch (shadowErr) {
+}
+
+var deleteVar;
+delete deleteVar;
+
+var labelVar = 0;
+function bar() {
+  labelVar:
+    for (;;) {
+    break labelVar;
+  }
+}
+
+var undefined;
+
+var shadow;
+
+function noShadow () {
+  var shadow = 'shadow';
+}
+
+var undefInit = undefined;
+
+var unusedVar;
+
+console.log(beforeDefine);
+var beforeDefine = 0;
+
