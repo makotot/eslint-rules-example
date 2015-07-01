@@ -360,3 +360,134 @@ var unusedVar;
 console.log(beforeDefine);
 var beforeDefine = 0;
 
+function handleCbErr (err, done) {
+  done();
+}
+
+var mixedRequire = require('./module'),
+  mixed = 'mixed';
+
+var NewRequire = new require('./module');
+
+var pathConcat = __dirname + 'path.js';
+
+function processExit () {
+  process.exit(1);
+}
+
+var fs = require('fs');
+
+fs.existsSync('./some-path');
+
+var bracketSpaces = [ 1, 2 ];
+
+if (obj) {
+  obj.d = 0;
+}
+else {
+  obj = {};
+}
+
+var camel_case = '';
+
+var space = 0 , arround = 1;
+
+var comma
+  , style;
+
+var computedProp = { foo: 1 };
+
+computedProp[ 'foo' ];
+
+var self;
+
+setTimeout(function () {
+  self = this;
+  console.log(self);
+}, 0);
+
+var funcNames = function () {};
+
+function funcStyleA () {}
+
+var funcStyleB = function () {};
+
+var keySpacing = {
+  space : []
+};
+
+var linesAroundCommentA;
+// lines around comment
+var linesAroundCommentB;
+
+
+function nestedCb (cbA) {
+  cbA(function (cbB) {
+    cbB(function (cbC) {
+      cbC(function (cbD) {
+        cbD(function () {
+        });
+      });
+    });
+  });
+}
+
+function newCap () {}
+
+var cap = new newCap();
+
+function NewParens () {}
+
+var parens = new NewParens;
+
+var newLineAfterVar = 0;
+console.log(newLineAfterVar);
+
+var arrayConstructor = new Array(1, 2);
+
+for (var i = 0; i < 10; i++) {
+  if (i < 5) {
+    continue;
+  }
+}
+
+var inlineComment = '';//inline
+
+if (obj.a) {
+} else {
+  if (obj.b) {
+  }
+}
+
+
+
+var nestedTernary = obj.a ? 0 : obj.b ? 1 : 2;
+
+var NewObj = new Object();
+
+var spacedFn = function () {};
+
+spacedFn ();
+
+var noTernary = obj ? 1 : 0;
+
+var trailingspaces;  
+
+var _underscoreDangle;
+
+var unneededTernary = obj.a === 1 ? true : false;
+
+var curlySpace = { foo: 1 };
+
+function oneVar () {
+  var oneVarA;
+  var oneVarB;
+}
+
+var operatorAssignment = 1;
+
+operatorAssignment = operatorAssignment + 1;
+
+var operatorLinebreak = 0 + 
+  1;
+

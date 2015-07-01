@@ -105,8 +105,61 @@
     "no-shadow": [2],// シャドーイングを許可しない
     "no-undef-init": [2],// undefinedによる初期化を許可しない
     "no-unused-vars": [2],// 使用することのない変数を許可しない
-    "no-use-before-define": [2]// 定義する前に使用することを許可しない
+    "no-use-before-define": [2],// 定義する前に使用することを許可しない
 
     // Node.js
+    "handle-callback-err": [2],// コールバックパターンでのエラーハンドリングの省略を許可しない
+    "no-mixed-requires": [2],// requireの変数と他の変数を一緒に変数宣言することを許可しない
+    "no-new-require": [2],// requireしたものを直接new演算子で使わない
+    "no-path-concat": [2],// __dirname/__filenameを使うとき、文字列の連結を許可しない
+    "no-process-exit": [2],// process.exit()の使用を許可しない
+    "no-restricted-modules": [2, "fs"],// 特定のモジュールの利用を許可しない
+    "no-sync": [2],// 同期処理を許可しない
+
+    // Stylistic Issues
+    "array-bracket-spacing": [2, "never"],// []の中でスペースを許可する(always)/しない(never)
+    "brace-style": [2],// 特定の波括弧のスタイルのみ許可する
+    "camelcase": [2],// キャメルケースの命名のみ許可する
+    "comma-spacing": [2, {// カンマ前後のスペースの有/無を許可する
+      "before": false,
+      "after": true
+    }],
+    "comma-style": [2, "last"],// カンマのスタイル(行頭/行末)を指定する
+    "computed-property-spacing": [2, "never"],// computedプロパティの前後のスペースの有/無を許可する
+    "consistent-this": [2],// 一貫性のないthisのエイリアスを許可しない
+    "eol-last": [2],// ファイルの最後に空白行を要求する
+    "func-names": [2],// 名前付き関数式を要求する
+    "func-style": [2, "expression"],// 関数宣言か関数式かスタイルを統一することを要求する
+    "indent": [2, "tab"],// インデントをタブかスペースn個かを指定する
+    "key-spacing": [2, {// オブジェクトリテラルのコロンの前後にスペースの有/無を許可しない
+      "beforeColon": false,
+      "afterColon": true
+    }],
+    "lines-around-comment": [2, {// コメントの前後に空白行を入れることを要求する
+      "beforeBlockComment": true,
+      "beforeLineComment": true
+    }],
+    "linebreak-style": [2],// 改行コードの混合を許可しない
+    "max-nested-callbacks": [2, 3],// コールバック関数のネストレベルをn以上許可しない
+    "new-cap": [2],// 小文字始まりのコンストラクタ関数を許可しない
+    "new-parens": [2],// 括弧付きでないコンストラクタの呼び出しを許可しない
+    "newline-after-var": [2, "always"],// 変数宣言の直後に空白行を置くことを要求する
+    "no-array-constructor": [2],// 複数の引数をもったArrayコンストラクタの使用を許可しない
+    "no-continue": [2],// continueの使用を許可しない
+    "no-inline-comments": [2],// コードと同じ行にコメントを書くことを許可しない
+    "no-lonely-if": [2],// else if に置き換え可能なelseブロックの中でのif文を許可しない
+    "no-mixed-spaces-and-tabs": [2],// スペースとタブの混合を許可しない
+    "no-multiple-empty-lines": [2],// 連続した空白行を許可しない
+    "no-nested-ternary": [2],// 三項演算子のネストを許可しない
+    "no-new-object": [2],// Objectコンストラクタを許可しない
+    "no-spaced-func": [2],// 関数を実行するとき、関数と括弧の間にスペースを入れることを許可しない
+    "no-ternary": [2],// 三項演算子の使用を許可しない
+    "no-trailing-spaces": [2],// 行末の不要なスペースを許可しない
+    "no-underscore-dangle": [2],// 識別子の先頭・末尾の_を許可しない
+    "no-unneeded-ternary": [2],// Booleanリテラルを返す、不要な三項演算子を許可しない
+    "object-curly-spacing": [2, "never"],// オブジェクトリテラルの波括弧の中でスペースの有/無を許可しない
+    "one-var": [2, "always"],// スコープ毎に変数宣言を１つしか許可しない
+    "operator-assignment": [2],// 演算子でショートハンドに置き換え可能な場合に置き換えることを要求する
+    "operator-linebreak": [2, "before"]// 演算子を改行前/後につけるスタイルに統一する
   }
 }
