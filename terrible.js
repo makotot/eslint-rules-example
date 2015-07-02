@@ -491,3 +491,75 @@ operatorAssignment = operatorAssignment + 1;
 var operatorLinebreak = 0 + 
   1;
 
+function paddedBlock () {
+
+  console.log(this);
+}
+
+var quote = {
+  prop: ''
+};
+
+var quotes = "quotes quotes";
+
+var semiSpacing ;
+
+var semi
+
+var sortVarsA, sortVarsC, sortVarsB;
+
+if(obj) {
+  console.log('space after keywords');
+}
+
+if (obj){
+  console.log('space before blocks');
+}
+
+function spaceBeforeFnParen() {}
+
+( function () {
+  console.log('space in parens');
+} )();
+
+var spaceInfixOps = 1+1;
+
+function spaceReturnThrowCase () {
+  return-1;
+}
+
+++ obj.a;
+
+//spaced comment
+
+function wrapRegex () {
+  return /regex/.test('regex');
+}
+
+class MyClass {
+
+  constructor () {
+    super();
+  }
+}
+
+function*generators () {
+}
+
+class BeforeSuper extends MyClass {
+  constructor () {
+    this.name = '';
+    super();
+  }
+}
+
+var noVar;
+
+var objShorthand = {
+  a: function () {
+  }
+};
+
+let preferConst = 0;
+
+

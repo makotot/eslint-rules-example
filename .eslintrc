@@ -1,10 +1,14 @@
 {
   "ecmaFeatures": {
+    "classes": true,// classを有効にする
+    "generators": true
   },
 
   "env": {
     "browser": true,// ブラウザのグローバル変数を利用可能にする
-    "node": true// Node.jsのグローバル変数とNode.js特有のルールを追加する
+    "node": true,// Node.jsのグローバル変数とNode.js特有のルールを追加する
+    "worker": true,// web workersのグローバル変数を利用可能にする
+    "es6": true// modulesを除くES6の仕様を有効にする
   },
 
   "globals": {
@@ -160,6 +164,37 @@
     "object-curly-spacing": [2, "never"],// オブジェクトリテラルの波括弧の中でスペースの有/無を許可しない
     "one-var": [2, "always"],// スコープ毎に変数宣言を１つしか許可しない
     "operator-assignment": [2],// 演算子でショートハンドに置き換え可能な場合に置き換えることを要求する
-    "operator-linebreak": [2, "before"]// 演算子を改行前/後につけるスタイルに統一する
+    "operator-linebreak": [2, "before"],// 演算子を改行前/後につけるスタイルに統一する
+    "padded-blocks": [2, "always"],// ブロックの中で最初と最後に空白行を入れないことを許可しない
+    "quote-props": [2, "always"],// オブジェクトのプロパティをクォーテーションで囲わないことを許可しない
+    "quotes": [2, "single", "avoid-escape"],// クォーテーションのルールを指定する
+    "semi-spacing": [2, {// セミコロン前後のスペース有無を指定する
+      "before": false,
+      "after": true
+    }],
+    "semi": [2, "always"],// セミコロンの省略を許可しない
+    "sort-vars": [2],// まとめて宣言する変数がアルファベット順でないことを許可しない
+    "space-after-keywords": [2],// ifやforのようなキーワードの直後にスペースを入れないことを許可しない
+    "space-before-blocks": [2, "always"],// ブロックの括弧の直前にスペースを入れないことを許可しない
+    "space-before-function-paren": [2, "always"],// 関数名かfunctionキーワードと開き括弧の間にスペース有無を指定する
+    "space-in-parens": [2, "never"],// 括弧の中で最初と最後のスペース有無を指定する
+    "space-infix-ops": [2],// 二項演算子の前後にスペースを入れないことを許可しない
+    "space-return-throw-case": [2],//return、throw、caseの直後にスペースを入れないことを許可しない
+    "space-unary-ops": [2],// 単項演算子の前後にスペース有無を指定する
+    "spaced-comment": [2],// コメントの直前にスペースorタブの有無を指定する
+    "wrap-regex": [2],// 括弧で囲われていない正規表現リテラルを許可しない
+
+    // ES6
+    "constructor-super": [2],// 無効なsuper()の呼び出しを許可しない
+    "generator-star-spacing": [2, {// generatorsの*の前後のスペース有無を指定する
+      "before": true,
+      "after": false
+    }],
+    "no-this-before-super": [2],// super()を呼び出す前のthis/superを許可しない
+    "no-var": [2],// varの使用を許可しない
+    "object-shorthand": [2, "always"],// objectリテラルのショートハンドを強制する
+    "prefer-const": [2]// letで宣言されている変数で、変更されることのないものに対してconstへの変更を強制する
+
+    // Legacy
   }
 }
