@@ -562,4 +562,30 @@ var objShorthand = {
 
 let preferConst = 0;
 
+function maxDepth (x, y) {
+  for (var i = 0; i < 10; i++) {
+    if (x) {
+      if (y) {
+        i++;
+      }
+    }
+  }
+}
 
+var maxLen = 'maxlenmaxlenmaxlenmaxlenmaxlenmaxlenmaxlenmaxlenmaxlenmaxlenmaxlenmaxlenmaxlenmaxlenmaxlenmaxlenmaxlenmaxlenmaxlenmaxlenmaxlenmaxlenmaxlenmaxlenmaxlenmaxlenmaxlenmaxlenmaxlenmaxlenmaxlenmaxlenmaxlenmaxlenmaxlenmaxlenmaxlenmaxlenmaxlenmaxlenmaxlen';
+
+function maxParams (a, b, c, d, e) {
+}
+
+function maxStatements () {
+  var hogehoge = 1;
+  var foobar = 2;
+  var barfoo = 3;
+  var fooo = 4;
+}
+
+var bitwise = obj.a ^ obj.b;
+
+var plusplus = 0;
+
+plusplus++;

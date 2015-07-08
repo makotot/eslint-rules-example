@@ -193,8 +193,14 @@
     "no-this-before-super": [2],// super()を呼び出す前のthis/superを許可しない
     "no-var": [2],// varの使用を許可しない
     "object-shorthand": [2, "always"],// objectリテラルのショートハンドを強制する
-    "prefer-const": [2]// letで宣言されている変数で、変更されることのないものに対してconstへの変更を強制する
+    "prefer-const": [2],// letで宣言されている変数で、変更されることのないものに対してconstへの変更を強制する
 
     // Legacy
+    "max-depth": [2, 2],// ブロックのネストをn個以上許可しない
+    "max-len": [2, 80, 2],// １行にn以上の文字数を許可しない
+    "max-params": [2, 3],// n個以上の引数を許可しない
+    "max-statements": [2, 3],// 関数内でn個以上のステートメントを許可しない
+    "no-bitwise": [2],// ビット演算を許可しない
+    "no-plusplus": [2]// ++/--の単項演算子の使用を許可しない
   }
 }
