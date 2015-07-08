@@ -1,13 +1,44 @@
 {
   "ecmaFeatures": {
+    "arrowFunctions": true,// アロー関数を有効にする
+    "binaryLiterals": true,// 2進数リテラルを有効にする
+    "blockBindings": true,// letとconstを有効にする
     "classes": true,// classを有効にする
-    "generators": true
+    "defaultParams": true,// デフォルトパラメータを有効にする
+    "destructuring": true,// 構造化代入を有効にする
+    "forOf": true,// for-ofを有効にする
+    "generators": true,// generatorsを有効にする
+    "modules": false,// moduleを有効にして、globalのstrict modeにする
+    "objectLiteralComputedProperties": true,// computedプロパティを有効にする
+    "objectLiteralDuplicateProperties": true,// strict modeでのプロパティの重複を有効にする
+    "objectLiteralShorthandMethods": true,// ショートハンドメソッドを有効にする
+    "objectLiteralShorthandProperties": true,// ショートハンドプロパティを有効にする
+    "octalLiterals": true,// 8進数リテラルを有効にする
+    "regexUFlag": true,// 正規表現でのuフラグを有効にする
+    "regexYFlag": true,// 正規表現でのyフラグを有効にする
+    "restParams": true,// 可変長引数を有効にする
+    "spread": true,// spread operatorを有効にする
+    "superInFunctions": true,// 関数内のsuperを有効にする
+    "templateStrings": true,// テンプレート文字列を有効にする
+    "unicodeCodePointEscapes": true,// code point escapes を有効にする
+    "globalReturn": true,// グローバルスコープでのreturnを有効にする
+    "jsx": true// JSXを有効にする
   },
 
   "env": {
     "browser": true,// ブラウザのグローバル変数を利用可能にする
     "node": true,// Node.jsのグローバル変数とNode.js特有のルールを追加する
     "worker": true,// web workersのグローバル変数を利用可能にする
+    "amd": true,// AMDの仕様の通りにrequire()とdefine()をグローバル変数として有効にする
+    "mocha": true,// mochaの全てのグローバル変数を有効にする
+    "jasmine": true,// jasmine(v1.3, v2.0)の全てのグローバル変数を有効にする
+    "phantomjs": true,// phantomjsのグローバル変数を有効にする
+    "jquery": true,// jQueryのグローバル変数を有効にする
+    "prototypejs": true,// prototype.jsのグローバル変数を有効にする
+    "shelljs": true,// shelljsのグローバル変数を有効にする
+    "meteor": true,// meteorのグローバル変数を有効にする
+    "mongo": true,// mongoのグローバル変数を有効にする
+    "applescript": true,// applescriptのグローバル変数を有効にする
     "es6": true// modulesを除くES6の仕様を有効にする
   },
 
